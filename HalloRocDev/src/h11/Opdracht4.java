@@ -8,17 +8,15 @@ public class Opdracht4 extends Applet {
     int teller, resultaat;
 
     public void init () {
-        teller = 1;
-        resultaat = teller * 5;
-        teller++;
-
     }
     public void paint (Graphics g) {
         int x = 50;
         int y = 50;
 
-        for (int i = 10; i <teller ; i++) {
-            g.drawString(" * 5=" + teller,x, y);
+        for (int i = 1; i <=10 ; i++) {
+            int teller = i * 3;
+            g.drawString(" x 3 = " + teller,x, y);
+            y += 10;
 
         }
     }
